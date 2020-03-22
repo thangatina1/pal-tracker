@@ -21,3 +21,11 @@ cf push pal-tracker -p build/libs/pal-tracker.jar --random-route --no-start
 /// Assignment 3
 
 /gradlew cloudNativeDeveloperReviewPipeline -PreviewUrl=https://pal-tracker-rested-dugong-ks.cfapps.io
+
+//Assignment 4
+
+./gradlew cloudNativeDeveloperRest -PserverUrl=https://pal-tracker-rested-dugong-ks.cfapps.io
+
+//Assignment 5
+
+ cf create-service p.mysql db-small tracker-database
