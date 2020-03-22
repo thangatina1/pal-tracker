@@ -1,0 +1,10 @@
+//Assignment -1 Spring boot Application
+
+cf push pal-tracker -p builds/libs/pal-tracker.jar --random-route --no-start
+
+cd ~/workspace/assignment-submission
+./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https://pal-tracker-rested-dugong-ks.cfapps.io/
+
+/////////////////////////////////////////
+
+// Assignment 2 configuring an App
