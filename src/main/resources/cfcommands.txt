@@ -2,6 +2,8 @@
 
 cf push pal-tracker -p builds/libs/pal-tracker.jar --random-route --no-start
 
+cf start pal-tracker
+
 cd ~/workspace/assignment-submission
 ./gradlew cloudNativeDeveloperSimpleApp -PserverUrl=https://pal-tracker-rested-dugong-ks.cfapps.io/
 
