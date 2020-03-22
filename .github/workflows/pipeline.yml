@@ -20,6 +20,7 @@ jobs:
         with:
           name: pal-tracker
           path: build/libs/pal-tracker.jar
+
     - uses: actions/checkout@v1
     - name: Set up JDK 11
       uses: actions/setup-java@v1
@@ -36,6 +37,7 @@ jobs:
       with:
         name: pal-tracker
         path: build/libs/pal-tracker.jar
+
   deploy:
     needs: build-and-publish
     runs-on: ubuntu-latest
