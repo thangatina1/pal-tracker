@@ -10,3 +10,10 @@ cd ~/workspace/assignment-submission
 /////////////////////////////////////////
 
 // Assignment 2 configuring an App
+
+cf set-env pal-tracker WELCOME_MESSAGE Hello from Cloud Foundry
+
+cf delete pal_tracker -f
+
+cf push pal-tracker -p build/libs/pal-tracker.jar --random-route --no-start
+./gradlew cloudNativeDeveloperCloudFoundry -PserverUrl=https://pal-tracker-rested-dugong-ks.cfapps.io/
